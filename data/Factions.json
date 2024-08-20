@@ -1,0 +1,427 @@
+{
+  "Factions": [
+    {
+      "Name": "Adeptus Administratum",
+      "Influence": "Adeptus Administratum",
+      "Equipment": [ "Robes", "Dataslate", "Writing Kit" ],
+      "Talent": "Data Delver",
+      "Solars": 800,
+      "DefaultAdvances": [ "Dexterity", "Medicae", "Linguistics", "Logic", "Lore", "Navigation" ],
+      "DefaultStatBonus": "Intelligence",
+      "DefaultStatBonusChoice": [ "Perception", "Fellowship", "Willpower" ],
+      "DefaultEquipmentChoice": [ "Auto-Quill|Pict Recorder|Vox Caster|Chirurgeon Kit" ],
+      "DefaultAugmeticChoice": [],
+      "DefaultTalents": [],
+      "PersonalContact": "",
+      "OptionalSolars": 0,
+      "Duties": [
+        {
+          "Name": "Clerk",
+          "Description": "Your duty is to preserve the data-vaults and archives of the Administratum, maintaining a working knowledge of huge amounts of information and applying it when required.",
+          "Advances": [ "Dexterity", "Linguistics", "Lore", "Lore", "Navigation" ],
+          "StatBonuses": [ "Intellegence", "Fellowship" ],
+          "Equipment": [ "Pict Recorder" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Scrivener",
+          "Description": "Your duty is to correctly and meticulously record the ceaseless stream of data that the Administraum uses to manage the titanic bureaucracy of the Imperium.",
+          "Advances": [ "Dexterity", "Linguistics", "Linguistics", "Lore", "Lore" ],
+          "StatBonuses": [ "Intelligence", "Willpower" ],
+          "Equipment": [ "Auto-Quill" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Officio Medicae",
+          "Description": "Your duty is to ensure an acceptable baseline of health in the Imperial populace, ensuring that Medicae are stocked and patients seen, in order to keep up productivity.",
+          "Advances": [ "Dexterity", "Logic", "Lore", "Medicae", "Medicae" ],
+          "StatBonuses": [ "Intelligence", "Perception" ],
+          "Equipment": [ "Chirurgeon Kit" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        }
+      ]
+    },
+    {
+      "Name": "Adeptus Astra Telepathica",
+      "Influence": "Astra Telepathica",
+      "Equipment": [ "Robes", "Mono-edge Knife", "Divination Instrument" ],
+      "Talent": "",
+      "Solars": 500,
+      "DefaultAdvances": [ "Awareness", "Dicipline", "Intuition", "Linguistics", "Navigation", "Psychic Mastery" ],
+      "DefaultStatBonus": "Willpower",
+      "DefaultStatBonusChoice": [ "Intelligence", "Perception", "Toughness" ],
+      "DefaultEquipmentChoice": [],
+      "DefaultAugmeticChoice": [],
+      "DefaultTalents": [ "Psyker", "Blank", "Condemn the Witch" ],
+      "PersonalContact": "",
+      "OptionalSolars": 0,
+      "Duties": [
+        {
+          "Name": "Black Ship Crew Member",
+          "Description": "Despite your lack of psychic ability, you have developed the mental fortitude to weather the terrors of the Warp.Your duty is to keep order on the ominous Black Ships of the Adeptus Astra Telepathica, the vessels that ferry captured psykers to the Scholastica Psykana on Terra.",
+          "Advances": [ "Awareness", "Dicipline", "Dicipline", "Intuition", "Intuition" ],
+          "StatBonuses": [ "Willpower", "Toughness" ],
+          "Equipment": [],
+          "Augmetics": [],
+          "Talents": [ "Condemn the Witch", "Mental Fortress" ],
+          "Solars": 0
+        },
+        {
+          "Name": "Sanctioned Psyker",
+          "Description": "Your duty is to use your reality-bending powers to assist an Imperial Faction, typically by unleashing the devastating powers of the Warp in the theatre of war with the Astra Militarum.",
+          "Advances": [ "Awareness", "Dicipline", "Dicipline", "Psychic Mastery", "Psychic Mastery" ],
+          "StatBonuses": [ "Willpower", "Perception" ],
+          "Equipment": [],
+          "Augmetics": [],
+          "Talents": [ "Psyker", "Sanctioned Psyker" ],
+          "Solars": 0
+        },
+        {
+          "Name": "Sister-In-Waiting",
+          "Description": "Your duty as a Blank is to become a Sister of Silence and hunt Rogue Psykers, though you have not yet sworn the Vow of Tranquillity and may still speak aloud.",
+          "Advances": [ "Awareness", "Awareness", "Dicipline", "Dicipline", "Navigation" ],
+          "StatBonuses": [ "Willpower", "Toughness" ],
+          "Equipment": [],
+          "Augmetics": [],
+          "Talents": [ "Blank" ],
+          "Solars": 0
+        }
+      ]
+    },
+    {
+      "Name": "Adeptus Mechanicus",
+      "Influence": "Adeptus Mechanicus",
+      "Equipment": [ "Robes", "Dataslate", "Sacred Ungents" ],
+      "Talent": "",
+      "Solars": 100,
+      "DefaultAdvances": [ "Dexterity", "Logic", "Lore", "Medicae", "Piloting", "Tech" ],
+      "DefaultStatBonus": "Intelligence",
+      "DefaultStatBonusChoice": [ "Perception", "Agility", "Toughness" ],
+      "DefaultEquipmentChoice": [],
+      "DefaultAugmeticChoice": [ "Augur Array|Vocal Implant|Augmetic Respiratory System|Augmetic Sensory Organ", "Augmetic Arm|Augmetic Tracks/Wheels|Augmetic Heart" ],
+      "DefaultTalents": [],
+      "PersonalContact": "",
+      "OptionalSolars": 0,
+      "Duties": [
+        {
+          "Name": "Apprentice Enginseer",
+          "Description": "Your duty is to divine the mysteries of Machine Spirits and work with the Holy Engines of the Omnissiah, repairing and maintaining machines of war.",
+          "Advances": [ "Logic", "Piloting", "Piloting", "Tech", "Tech" ],
+          "StatBonuses": [ "Intelligence", "Agility" ],
+          "Equipment": [],
+          "Augmetics": [ "Augmetic Respiratory System", "Augmetic Arm" ],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Apprentice Genetor",
+          "Description": "Your duty is to learn the intricacies of biological forms so that they may be improved upon by replacing the weakness of the flesh with the majesty of the machine.",
+          "Advances": [ "Logic", "Medicae", "Medicae", "Tech", "Tech" ],
+          "StatBonuses": [ "Intelligence", "Toughness" ],
+          "Equipment": [],
+          "Augmetics": [ "Augmetic Sensory Organ", "Augmetic Heart" ],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Apprentice Logis",
+          "Description": "Your duty is to gather, protect, analyse, and apply information of all kinds in the Omnissiah’s name.",
+          "Advances": [ "Logic", "Logic", "Lore", "Tech", "Tech" ],
+          "StatBonuses": [ "Intelligence", "Perception" ],
+          "Equipment": [],
+          "Augmetics": [ "Augmetic Sensory Organ", "Augmetic Tracks/Wheels" ],
+          "Talents": [],
+          "Solars": 0
+        }
+      ]
+    },
+    {
+      "Name": "Adeptus Ministorum",
+      "Influence": "Adeptus Ministorum",
+      "Equipment": [ "Robes", "Holy Icon", "Backpack" ],
+      "Talent": "Faithful (Imperial Cult)",
+      "Solars": 0,
+      "DefaultAdvances": [ "Dicipline", "Intuition", "Lore", "Medicae", "Presence", "Rapport" ],
+      "DefaultStatBonus": "Willpower",
+      "DefaultStatBonusChoice": [ "Intelligence", "Perception", "Fellowship" ],
+      "DefaultEquipmentChoice": [ "Carapace Chestplate|Chainsword|Chirurgeon Kit|Laud Hailer|Ornamental Staff|Ornamental Robes", "Carapace Chestplate|Chainsword|Chirurgeon Kit|Laud Hailer|Ornamental Staff|Ornamental Robes" ],
+      "DefaultAugmeticChoice": [],
+      "DefaultTalents": [],
+      "PersonalContact": "",
+      "OptionalSolars": 600,
+      "Duties": [
+        {
+          "Name": "Missionary",
+          "Description": "Your duty is to spread the word of the Emperor’s divinity across the stars, often on hostile worlds — and to hostile congregations.",
+          "Advances": [ "Discipline", "Lore", "Presence", "Rapport", "Rapport" ],
+          "StatBonuses": [ "Willpower", "Perception" ],
+          "Equipment": [ "Auto Pistol", "Chainsword", "Laud Hailer" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 200
+        },
+        {
+          "Name": "Preacher",
+          "Description": "Your duty is to deliver zealous oratory on the teachings of the Imperial Creed, inspiring, encouraging, and terrifying the masses into serving the Emperor.",
+          "Advances": [ "Intuition", "Lore", "Presence", "Presence", "Rapport" ],
+          "StatBonuses": [ "Willpower", "Fellowship" ],
+          "Equipment": [ "Holy Icon", "Ornamental Staff", "Laud Hailer" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 590
+        },
+        {
+          "Name": "Sister Novitiate",
+          "Description": "Your duty is to serve the faithful sisterhood of the Adepta Sororitas, as a diplomat, medic, or warrior, as your talents dictate.",
+          "Advances": [ "Dicipline", "Dicipline", "Lore", "Medicae", "Medicae" ],
+          "StatBonuses": [ "Willpower", "Intelligence" ],
+          "Equipment": [ "Autopistol", "Carapace Chestplate", "Chirurgeon Kit" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 200
+        }
+      ]
+    },
+    {
+      "Name": "Astra Militarum",
+      "Influence": "Astra Militarum",
+      "Equipment": [ "Knife", "Flak Armor", "Frag Grenade" ],
+      "Talent": "Drilled",
+      "Solars": 300,
+      "DefaultAdvances": [ "Athletics", "Discipline", "Fortitude", "Melee", "Ranged", "Stealth" ],
+      "DefaultStatBonus": "Toughness",
+      "DefaultStatBonusChoice": [ "WeaponSkill", "BallisticSkill", "Strength" ],
+      "DefaultEquipmentChoice": [ "Lasgun|Laspistol|Las Carbine|Entrenching Tool|Chameleoline Cloak|Chainsword", "Lasgun|Laspistol|Las Carbine|Entrenching Tool|Chameleoline Cloak|Chainsword" ],
+      "DefaultAugmeticChoice": [],
+      "DefaultTalents": [],
+      "PersonalContact": "",
+      "OptionalSolars": 0,
+      "Duties": [
+        {
+          "Name": "Melee Specialist",
+          "Description": "Your duty is to charge the enemies of the Imperium and engage them in melee combat, a responsibility often assigned to recruits from less technologically advanced worlds.",
+          "Advances": [ "Athletics", "Discipline", "Fortitude", "Melee", "Melee" ],
+          "StatBonuses": [ "Toughness", "WeaponSkill" ],
+          "Equipment": [ "Laspistol", "Chainsword" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Scout",
+          "Description": "Your duty is to perform reconnaissance and covert operations for the Astra Militarum, ranging far behind enemy lines.",
+          "Advances": [ "Athletics", "Melee", "Ranged", "Stealth", "Stealth" ],
+          "StatBonuses": [ "Toughness", "BallisticSkill" ],
+          "Equipment": [ "Chameleoline Cloak", "Las Carbine" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Trooper",
+          "Description": "Your duty is to stand firm and fire your Lasgun as the enemies of the Imperium charge towards you. Follow orders in the face of the sanity-shredding terror and you’ll make a fine Trooper.",
+          "Advances": [ "Athletics", "Discipline", "Discipline", "Ranged", "Ranged" ],
+          "StatBonuses": [ "Toughness", "BallisticSkill" ],
+          "Equipment": [ "Lasgun", "Entrenching Tool" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        }
+      ]
+    },
+    {
+      "Name": "Imperial Fleet",
+      "Influence": "Imperial Fleet",
+      "Equipment": [],
+      "Talent": "Void Legs",
+      "Solars": 0,
+      "DefaultAdvances": [ "Awareness", "Logic", "Navigation", "Piloting", "Reflexes", "Tech" ],
+      "DefaultStatBonus": "Agility",
+      "DefaultStatBonusChoice": [ "Strength", "Toughness", "Perception" ],
+      "DefaultEquipmentChoice": [ "Laspistol|Pump-action Shotgun", "Void Suit|Flak Vest", "Lascutter|PhotoVisors" ],
+      "DefaultAugmeticChoice": [],
+      "DefaultTalents": [],
+      "PersonalContact": "",
+      "OptionalSolars": 500,
+      "Duties": [
+        {
+          "Name": "Aeronautica Pilot",
+          "Description": "Your duty is to pilot aircraft for the Aeronautica Imperialis, a branch of the Navis Imperialis dedicated to providing in-atmosphere support for the forces of the Astra Militarum.",
+          "Advances": [ "Awareness", "Navigation", "Piloting", "Piloting", "Reflexes" ],
+          "StatBonuses": [ "Agility", "Perception" ],
+          "Equipment": [ "Laspistol", "Photo-visors", "Void Suit" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 500
+        },
+        {
+          "Name": "Armsman",
+          "Description": "Your duty is to defend your voidship and follow your Captain’s orders, performing any tasks they may require and laying down your life for the vessel if necessary.",
+          "Advances": [ "Awareness", "Logic", "Navigation", "Piloting", "Reflexes" ],
+          "StatBonuses": [ "Agility", "Toughness" ],
+          "Equipment": [ "Flak Vest", "Lascutter", "Mag Boots", "Pump-action Shotgun" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 500
+        },
+        {
+          "Name": "Navis Officer",
+          "Description": "Your duty is to aid in ensuring that discipline and the chain of command are maintained aboard a voidship. Though your rank is not high, you nevertheless form a vital part of your captain’s command structure.",
+          "Advances": [ "Awareness", "Awareness", "Navigation", "Reflexes", "Reflexes" ],
+          "StatBonuses": [ "Agility", "Perception" ],
+          "Equipment": [ "Laspistol", "Void Suit", "Photo-Contacts", "Ornamental Light Leathers" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 480
+        }
+      ]
+    },
+    {
+      "Name": "Infractionist",
+      "Influence": "Infractionist",
+      "Equipment": [ "Knife", "Backpack", "Mundane Weapon", "Common Tool" ],
+      "Talent": "Well-Prepared",
+      "Solars": 0,
+      "DefaultAdvances": [ "Athletics", "Dexterity", "Fortitude", "Rapport", "Reflexes", "Stealth" ],
+      "DefaultStatBonus": "Agility",
+      "DefaultStatBonusChoice": [ "Toughness", "Perception", "Fellowship" ],
+      "DefaultEquipmentChoice": [ "Stub Pistol|Stub Revolver", "Light Leathers|Heavy Leathers"],
+      "DefaultAugmeticChoice": [],
+      "DefaultTalents": [],
+      "PersonalContact": "",
+      "OptionalSolars": 0,
+      "Duties": [
+        {
+          "Name": "Fixer",
+          "Description": "Your duty is to be the ganger who has a solution for everything. Someones got a problem, maybe needs a bit of obscura, or a misunderstanding cleaned up? You’re the one they call.",
+          "Advances": [ "Athletics", "Dexterity", "Rapport", "Rapport", "Stealth" ],
+          "StatBonuses": [ "Agility", "Fellowship" ],
+          "Equipment": [ "Stub Revolver", "Light Leathers", "Shoddy Ugly Hammer", "Shoddy Ugly Lascutter" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Ganger",
+          "Description": "Your duty is whatever your gang leader tells you to do, be that bashing in heads, scaring snitches, or moving goods. You don’t ask questions, you just get it done.",
+          "Advances": [ "Dexterity", "Rapport", "Reflexes", "Stealth", "Stealth" ],
+          "StatBonuses": [ "Agility", "Toughness" ],
+          "Equipment": [ "Stub Pistol", "Heavy Leathers", "Shoddy Ugly Axe", "Shoddy Ugly Stummer" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "HiveRunner",
+          "Description": "Your duty is to move things quickly and quietly for your gang, be it information, messages, stolen goods, or illicit materials.",
+          "Advances": [ "Athletics", "Athletics", "Fortitude", "Reflexes", "Stealth" ],
+          "StatBonuses": [ "Agility", "Perception" ],
+          "Equipment": [ "Stub Pistol", "Light Leathers", "Shoddy Ugly Brass Knuckles", "Shoddy Ugly Grapnel Launcher" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        }
+      ]
+    },
+    {
+      "Name": "Inquisition",
+      "Influence": "Inquisition",
+      "Equipment": [ "Laspistol", "Armored Bodyglove", "Glowglobe", "Manacles" ],
+      "Talent": "Ever Vigilant",
+      "Solars": 400,
+      "DefaultAdvances": [ "Awareness", "Dicipline", "Intuition", "Logic", "Lore", "Presence" ],
+      "DefaultStatBonus": "Perception",
+      "DefaultStatBonusChoice": [ "Toughness", "Intelligence", "Willpower" ],
+      "DefaultEquipmentChoice": [ "Auspex|Comm Leech|Pict Recorder" ],
+      "DefaultAugmeticChoice": [],
+      "DefaultTalents": [],
+      "PersonalContact": "",
+      "OptionalSolars": 0,
+      "Duties": [
+        {
+          "Name": "Acolyte",
+          "Description": "Your duty is to investigate on behalf of the Inquisition, working to deduce the identities of the enemies of the Imperium as well as where and how they are operating.",
+          "Advances": [ "Awareness", "Dicipline", "Intuition", "Logic", "Presence" ],
+          "StatBonuses": [ "Perception", "Toughness" ],
+          "Equipment": [ "Comm Leech" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Exorcist",
+          "Description": "Your duty is to provide spiritual support to an Inquisitor’s retinue, utilising your knowledge of scripture and your strength of will to combat the unholy enemies of the Imperium.",
+          "Advances": [ "Awareness", "Dicipline", "Intuition", "Lore", "Presence" ],
+          "StatBonuses": [ "Perception", "Willpower" ],
+          "Equipment": [ "Auspex" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Sage",
+          "Description": "Your duty is to provide information to the Inquisition, using your vast knowledge to solve problems, make deductions, and provide context for clues.",
+          "Advances": [ "Intuition", "Logic", "Logic", "Lore", "Lore" ],
+          "StatBonuses": [ "Perception", "Intelligence" ],
+          "Equipment": [ "Auspex" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        }
+      ]
+    },
+    {
+      "Name": "Rogue Trader",
+      "Influence": "Rogue Trader",
+      "Equipment": [ "Armored Bodyglove", "Multicompass" ],
+      "Talent": "Dealmaker",
+      "Solars": 0,
+      "DefaultAdvances": [ "Intuition", "Linguistics", "Navigation", "Presence", "Piloting", "Rapport" ],
+      "DefaultStatBonus": "Fellowship",
+      "DefaultStatBonusChoice": [ "Agility", "Intelligence", "Perception" ],
+      "DefaultEquipmentChoice": [],
+      "DefaultAugmeticChoice": [],
+      "DefaultTalents": [],
+      "PersonalContact": "",
+      "OptionalSolars": 1200,
+      "Duties": [
+        {
+          "Name": "Adventurer",
+          "Description": "Your duty is to expand the frontiers of the Imperium; through charm and negotiation if possible, by force if necessary.",
+          "Advances": [ "Intuition", "Navigation", "Presence", "Presence", "Rapport" ],
+          "StatBonuses": [ "Fellowship", "Agility" ],
+          "Equipment": [ "Autopistol", "Bulky Ornamental Carapace Chestplate" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 0
+        },
+        {
+          "Name": "Catalogist",
+          "Description": "Your duty is to explore on behalf of a Rogue Trader Dynasty, documenting flora, fauna, individuals, and environments that might be profitably exploited.",
+          "Advances": [ "Intuition", "Linguistics", "Navigation", "Navigation", "Piloting" ],
+          "StatBonuses": [ "Fellowship", "Intelligence" ],
+          "Equipment": [ "Auto-Quill", "Backpack", "Chrono", "Dataslate", "Pict Recorder", "Robes" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 700
+        },
+        {
+          "Name": "Diplomat",
+          "Description": "Your duty is to negotiate on behalf of a Rogue Trader Dynasty, interacting with other Imperial Factions, outsiders, and potentially even xenos.",
+          "Advances": [ "Intuition", "Presence", "Linguistics", "Rapport", "Rapport" ],
+          "StatBonuses": [ "Fellowship", "Perception" ],
+          "Equipment": [ "Chrono", "Regicide Set", "Ornamental Robes", "Slings" ],
+          "Augmetics": [],
+          "Talents": [],
+          "Solars": 1100
+        }
+      ]
+    }
+  ]
+}
