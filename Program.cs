@@ -71,6 +71,9 @@ namespace AdMunitorumCharacterCreatorForms
 
         public Origin PreviousOrigin { get; set; } //for use in reverting advances.
         public Origin CurrentOrigin { get; set; } //Currently selected origin
+        public Role CurrentRole { get; set; } //Currently selected role
+        public Role PreviousRole { get; set; } //for use in reverting advances.
+        public RoleList AllRoles { get; set; }
         public FactionList AllFactions { get; set; }
         public List<int> AllStatAdvances { get; set; }
         public List<int> AllSkillAdvances { get; set; }
@@ -192,6 +195,11 @@ namespace AdMunitorumCharacterCreatorForms
             CurrentDuty = new Duty();
             PreviousDuty = new Duty();
             PreviousDuty.Name = "None";
+            AllRoles = new RoleList();
+            AllRoles = AllRoles.Deserialize();
+            CurrentRole = new Role();
+            PreviousRole = new Role();
+            PreviousRole.Name = "None";
         }
     }
 }

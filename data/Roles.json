@@ -1,0 +1,76 @@
+{
+    "Roles":[
+        {
+            "Name": "Interocultor",
+            "NumTalent": 4,
+            "Talent": ["Air of Authority", "Briber", "Dealmaker", "Distracting", "Gallows Humour", "Gothic Gibberish", "Lickspittle", "Overseer"],
+            "NumAdvances": 2,
+            "Advances": ["Awareness", "Discipline", "Intuition", "Linguistics", "Presence", "Rapport"],
+            "NumSpecialisations": 2,
+            "Specialisations": ["Intuition", "Presence", "Rapport"],
+            "RoleDefualtEquip": ["Knife", "Survival Gear", "Vox Bead"],
+            "RoleEquipChoice": ["Laspistol|Stub Revolver", "Laud Hailer|Pict Recorder|Vox-Caster"],
+            "Addrolepsyker": false
+        },
+        {
+            "Name": "Mystic",
+            "NumTalent": 2,
+            "Talent": ["Condemn the Witch", "Fated", "Forbidden Knowledge", "Mental Fortress", "Sanctioned Psyker"],
+            "NumAdvances": 3,
+            "Advances": ["Awareness", "Discipline", "Intuition", "Lore", "Navigation", "Psychic Mastery"],
+            "NumSpecialisations": 2,
+            "Specialisations": ["Discipline (Fear)", "Linguistics (Forbidden)", "Lore (Forbidden)", "Awareness (Psyniscience)", "(Forbidden) Specialisation"],
+            "RoleDefualtEquip": ["Survival Gear", "Vox Bead"],
+            "RoleEquipChoice": ["knife|staff", "laspistol|stub revolver", "psy focus|auspex"],
+            "Addrolepsyker": true
+        },
+        {
+            "Name": "Penumbra",
+            "NumTalent": 2,
+            "Talent": ["Burglar", "Familiar Terrain", "Read Lips", "Secret Identity", "Skulker", "Unremarkable"],
+            "NumAdvances": 3,
+            "Advances": ["Athletics", "Awareness", "Dexterity", "Ranged", "Reflexes", "Stealth"],
+            "NumSpecialisations": 2,
+            "Specialisations": ["Ranged", "Reflexes", "Stealth"],
+            "RoleDefualtEquip": ["2 Knifes", "Silencer", "Smoke Grenade", "Survival Gear", "Vox Bead"],
+            "RoleEquipChoice": ["Autopistol|Laspistol", "Long Las|Sniper Rifle", "Auspex|Comm Leech|Disguise Kit|Grapnel & Line|Magnoculars|Multikey|Pict Recorder|Photo-visors|Signal Jammer", "Auspex|Comm Leech|Disguise Kit|Grapnel & Line|Magnoculars|Multikey|Pict Recorder|Photo-visors|Signal Jammer"],
+            "Addrolepsyker": false
+        },
+        {
+            "Name": "Savant",
+            "NumTalent": 2,
+            "Talent": ["Artist", "Attentive Assistant", "Chirurgeon", "Data Delver", "Eidetic Memory", "Lawbringer"],
+            "NumAdvances": 3,
+            "Advances": ["Logic", "Lore", "Medicae", "Navigation", "Piloting", "Tech"],
+            "NumSpecialisations": 2,
+            "Specialisations": ["Lore", "Medicae", "Tech"],
+            "RoleDefualtEquip": ["Knife", "Slings", "Dataslate", "Survival Gear", "Vox Bead"],
+            "RoleEquipChoice": ["Laspistol|Stub Revolver", "Auspex|Auto-quill|Chirurgeon's Tools|Combi-Tool|Diagnostor|Multicompass|Multikey", "Auspex|Auto-quill|Chirurgeon's Tools|Combi-Tool|Diagnostor|Multicompass|Multikey"],
+            "Addrolepsyker": false
+        },
+        {
+            "Name": "Warrior",
+            "NumTalent": 2,
+            "Talent": ["Deadeye", "Disarm", "Drilled", "Duellist", "Tactical Movement", "Two-handed Cleave"],
+            "NumAdvances": 3,
+            "Advances": ["Athletics", "Fortitude", "Medicae", "Melee", "Ranged", "Reflexes"],
+            "NumSpecialisations": 2,
+            "Specialisations": ["Melee", "Ranged", "Reflexes"],
+            "RoleDefualtEquip": ["Knife", "Survival Gear", "Vox Bead", "Frag Grenade", "Backpack"],
+            "RoleEquipChoice": ["(mundane) Weapon|Chainsword","Laspistol|Stub Revolver", "Lasgun|Shotgun (combat)", "Scrap-plate|Flak Jacket"],
+            "Addrolepsyker": false
+        },
+        {
+            "Name": "Zealot",
+            "NumTalent": 2,
+            "Talent": ["Faithful (Imperial Cult)", "Flagellant", "Frenzy", "Hatred", "Icon Bearer", "Martyrdom"],
+            "NumAdvances": 3,
+            "Advances": ["Discipline", "Fortitude", "Linguistics", "Lore", "Melee", "Presence"],
+            "NumSpecialisations": 2,
+            "Specialisations": ["Discipline", "Lore", "Melee"],
+            "RoleDefualtEquip": ["Knife",  "Holy Icon", "Vox Bead"],
+            "RoleEquipChoice": ["Great Weapon|Chainsword", "Laspistol|Hand Flamer", "Heavy Leathers|Robes", "Laud Hailer|Writing Kit"],
+            "Addrolepsyker": false
+        }
+    ]
+}

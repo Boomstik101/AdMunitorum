@@ -775,7 +775,7 @@ namespace AdMunitorum
                     FactionPageTalentDropdown.Items.Add(talent);
                     FactionPageTalentDropdown.Text = Instance.CurrentFaction.DefaultTalents[0];
                 }
-                
+
                 for (int i = 0; i < Instance.CurrentFaction.Equipment.Count; i++)
                 {
 
@@ -797,7 +797,7 @@ namespace AdMunitorum
                     FactionTabStatDropdown.Items.Add(stat);
                     FactionTabStatDropdown.Text = Instance.CurrentFaction.DefaultStatBonusChoice[0];
                 }
-                
+
                 for (int i = 0; i < Instance.CurrentFaction.DefaultAugmeticChoice.Count; i++)
                 {
                     List<string> augmeticChoices = Listify(Instance.CurrentFaction.DefaultAugmeticChoice[i]);
@@ -832,7 +832,7 @@ namespace AdMunitorum
                     AugmeticDropdowns[i].Items.Add(Instance.CurrentDuty.Augmetics[i]);
                     AugmeticDropdowns[i].Text = Instance.CurrentDuty.Augmetics[i];
                 }
-                if(Instance.CurrentDuty.Talents.Count == 1)
+                if (Instance.CurrentDuty.Talents.Count == 1)
                 {
                     FactionPageTalentDropdown.Items.Add(Instance.CurrentDuty.Talents[0]);
                     FactionPageTalentDropdown.Text = Instance.CurrentDuty.Talents[0];
@@ -862,7 +862,7 @@ namespace AdMunitorum
                             ItemDropdowns[i].Text = itemChoices[0];
                         }
                     }
-                    
+
                 }
                 for (int i = 0; i < Instance.CurrentFaction.Equipment.Count; i++)
                 {
@@ -914,10 +914,110 @@ namespace AdMunitorum
 
         private void FactionPageItemDropdown1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(FactionPageItemDropdown1.SelectedItem.ToString() == "Flak Vest")
+            if (FactionPageItemDropdown1.SelectedItem.ToString() == "Flak Vest")
             {
                 FactionPageItemBox0.Text = "Mag Boots";
             }
+        }
+
+        private void RoleSelectionDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //populate all the comboboxes with the listed role. also read the json.
+            //Emperor help us with the mystic.
+            StatsSingleton.Instance.CurrentRole = StatsSingleton.Instance.AllRoles.Roles.Find(x => x.Name == RoleSelectionDropdown.SelectedItem.ToString());
+            //clear the previous stuff
+            RoleAdvancesCombobox1.Items.Clear();
+            RoleAdvancesCombobox1.Text = "";
+            RoleAdvancesCombobox2.Text = "";
+            RoleAdvancesCombobox2.Items.Clear();
+            RoleAdvancesCombobox3.Items.Clear();
+            RoleAdvancesCombobox3.Text = "";
+            RoleEquipCombobox1.Items.Clear();
+            RoleEquipCombobox1.Text = "";
+            RoleEquipCombobox2.Items.Clear();
+            RoleEquipCombobox2.Text = "";
+            RoleEquipCombobox3.Items.Clear();
+            RoleEquipCombobox3.Text = "";
+            RoleEquipCombobox4.Items.Clear();
+            RoleEquipCombobox4.Text = "";
+            RoleSpeicalizationComboBox1.Items.Clear();
+            RoleSpeicalizationComboBox1.Text = "";
+            RoleSpeicalizationComboBox2.Items.Clear();
+            RoleSpeicalizationComboBox2.Text = "";
+            RoleEquipCombobox1.Items.Clear();
+            RoleEquipCombobox1.Text = "";
+            RoleEquipCombobox2.Items.Clear();
+            RoleEquipCombobox2.Text = "";
+            RoleEquipCombobox3.Items.Clear();
+            RoleEquipCombobox3.Text = "";
+            RoleEquipCombobox4.Items.Clear();
+            RoleEquipCombobox4.Text = "";
+            RoleEquipDefaultLabel1.Text = "";
+            RoleEquipDefaultLabel2.Text = "";
+            RoleEquipDefaultLabel3.Text = "";
+            RoleEquipDefaultLabel4.Text = "";
+            RoleTalentCombobox1.Items.Clear();
+            RoleTalentCombobox1.Text = "";
+            RoleTalentCombobox2.Items.Clear();
+            RoleTalentCombobox2.Text = "";
+            RoleTalentCombobox3.Items.Clear();
+            RoleTalentCombobox3.Text = "";
+            RoleTalentCombobox4.Items.Clear();
+            RoleTalentCombobox4.Text = "";
+
+            //make comboboxe lists for easy iteration
+            List<ComboBox> RoleAdvancesComboboxes = new List<ComboBox> { RoleAdvancesCombobox1, RoleAdvancesCombobox2, RoleAdvancesCombobox3 };
+            List<ComboBox> RoleEquipComboboxes = new List<ComboBox> { RoleEquipCombobox1, RoleEquipCombobox2, RoleEquipCombobox3, RoleEquipCombobox4 };
+            List<Label> RoleEquipDefaultLabels = new List<Label> { RoleEquipDefaultLabel1, RoleEquipDefaultLabel2, RoleEquipDefaultLabel3, RoleEquipDefaultLabel4, RoleEquipDefaultLabel5};
+            List<ComboBox> RoleTalentComboboxes = new List<ComboBox> { RoleTalentCombobox1, RoleTalentCombobox2, RoleTalentCombobox3, RoleTalentCombobox4 };
+            List<ComboBox> RoleSpecializationComboboxes = new List<ComboBox> { RoleSpeicalizationComboBox1, RoleSpeicalizationComboBox2 };
+
+            //populate the fields
+            //loop over the role comboboxes, and then add each item to the combobox and set its text.
+            //previous attempts have poisoned the AI...
+
+            for (int i = 0; i < StatsSingleton.Instance.CurrentRole.NumAdvances; i++)
+            {
+                foreach (string advance in StatsSingleton.Instance.CurrentRole.Advances)
+                {
+                    RoleAdvancesComboboxes[i].Items.Add(advance);
+                    RoleAdvancesComboboxes[i].Text = advance;//i feel like this shouldnt work...
+                }
+            
+            }
+            for (int i = 0; i < StatsSingleton.Instance.CurrentRole.RoleEquipChoice.Count; i++)
+            {
+                //seperate the choices by the | character
+                List<string> equipChoices = Listify(StatsSingleton.Instance.CurrentRole.RoleEquipChoice[i]);
+                foreach (string equip in equipChoices)
+                {
+                    RoleEquipComboboxes[i].Items.Add(equip);
+                    RoleEquipComboboxes[i].Text = equip;
+                }
+            }
+            for (int i = 0; i < StatsSingleton.Instance.CurrentRole.RoleDefualtEquip.Count; i++) //equipment you dont have a choice in getting.
+            {
+                RoleEquipDefaultLabels[i].Text = StatsSingleton.Instance.CurrentRole.RoleDefualtEquip[i];
+            }
+            for (int i = 0; i < StatsSingleton.Instance.CurrentRole.NumTalent; i++)
+            {
+                foreach (string talent in StatsSingleton.Instance.CurrentRole.Talent)
+                {
+                RoleTalentComboboxes[i].Items.Add(talent);
+                RoleTalentComboboxes[i].Text = talent;
+                }
+            }
+            for (int i = 0; i < StatsSingleton.Instance.CurrentRole.NumSpecialisations; i++)
+            {
+                foreach (string spec in StatsSingleton.Instance.CurrentRole.Specialisations)
+                {
+                    RoleSpecializationComboboxes[i].Items.Add(spec);
+                    RoleSpecializationComboboxes[i].Text = spec;
+                }
+            }
+
+            
+
         }
     }
 }

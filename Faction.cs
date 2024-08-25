@@ -38,7 +38,10 @@ public class FactionList //this really feels wonky
 
     public FactionList Deserialize()
     {
-        string filename = "C:\\dev\\charcreator\\AdMunitorum\\AdMunitorum\\data\\Factions.json";
+        //string filename = "C:\\dev\\charcreator\\AdMunitorum\\AdMunitorum\\data\\Factions.json";
+        string cwd = Directory.GetCurrentDirectory();
+        string dataDir = Path.Combine(cwd, "..\\..\\..\\data");
+        string filename = Path.Combine(dataDir, "Factions.json");
         string json = File.ReadAllText(filename);//actually tho, make this a relative path
         FactionList? factionList = JsonSerializer.Deserialize<FactionList>(json);
         return factionList;

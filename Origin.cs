@@ -33,7 +33,11 @@ public class OriginList
     {
         //string workingDirectory = Environment.CurrentDirectory;
         //string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
-        string filename = "C:\\dev\\charcreator\\AdMunitorum\\AdMunitorum\\data\\Origins.json";
+        string cwd = Directory.GetCurrentDirectory();
+        //go up 3 directories and then into data
+        string dataDir = Path.Combine(cwd, "..\\..\\..\\data");
+
+        string filename = Path.Combine(dataDir, "Origins.json");
         string json = File.ReadAllText(filename);//actually tho, make this a relative path
         OriginList? originList = JsonSerializer.Deserialize<OriginList>(json);
         return originList;
